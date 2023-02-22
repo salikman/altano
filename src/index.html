@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/base/head.html', {
+    "title": "Главная"
+})
+
+<body class="is-home">
+    @@include('html/base/header.html')
+
+    <main>
+        @@include('html/pages/home/slider.html') 
+        <div class="container">
+            <div class="home-row">
+                @@include('html/sections/sidebar/sidebar.html')
+                <div class="content">
+                    @@include('html/pages/home/blog.html')
+                </div>
+            </div>
+        </div>
+        @@include('html/pages/home/tabs.html')
+        @@include('html/pages/home/text.html')
+        @@include('html/pages/home/news.html')
+    </main>
+
+    @@include('html/base/footer.html')
+
+    @@include('html/base/js.html')
+</body>
+</html>

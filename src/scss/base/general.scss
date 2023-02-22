@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.2
+}
+
+// font
+body {
+    color: #0f0f0f;
+    font: 300 1rem/1.5 Roboto, sans-serif;
+}
+
+main {
+    position: relative;
+    flex: 1;
+
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    color: transparent;
+    image-rendering: auto;
+}
+
+article>*+* {
+    margin-top: 1em
+}
+
+label,
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    box-shadow: none;
+    font: inherit;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 1150px;
+    width: 100%;
+}
+
+// lazyLoad
+.lazy-load {
+    position: relative;
+    padding: 0 0 90% 0;
+    background: url("../img/loading.gif") center / 50px no-repeat;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+// icon
+i.large {
+    font-size: 1.5rem;
+}
+
+// reset
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    margin: 0;
+    box-sizing: border-box;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    box-shadow: none;
+    border: none;
+}
