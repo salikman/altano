@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/base/head.html', {
+    "title": "ДИТЯЧИЙ КОМПЛЕКТ HAWAII SW"
+})
+
+<body class="is-page">
+    @@include('html/base/header.html')
+
+    <main>
+        <div class="container">
+            @@include('html/sections/title/title.html', {
+                title: 'ДИТЯЧИЙ КОМПЛЕКТ HAWAII SW'
+            })
+            @@include('html/sections/breadcrumb.html')
+            @@include('html/pages/products/product.html')
+        </div>
+    </main>
+
+    @@include('html/base/footer.html')
+
+    @@include('html/base/js.html')
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+            var swiper2 = new Swiper(".mySwiper2", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: swiper,
+                },
+            });
+    </script>
+</body>
+</html>

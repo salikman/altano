@@ -1,0 +1,19 @@
+.page-breadcrumb {
+    margin-bottom: 20px;
+
+    .breadcrumb li {
+        display: inline;
+        color: #4d4d4d;
+        font-size: 18px;
+
+        & + li:before {
+            padding: 5px 7px;
+            color: black;
+            content: "\203A";
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}

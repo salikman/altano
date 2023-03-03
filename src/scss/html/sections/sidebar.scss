@@ -13,7 +13,10 @@
         }
     }
 
-    .sidebar__collapse {
+    .sidebar__collapse,
+    .filter__collapse {
+        position: relative;
+        z-index: 10;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -31,6 +34,8 @@
     }
     
     .sidebar__title {
+        display: inline-block;
+        margin-bottom: 20px;
         font-size: 28px;
         font-weight: 700;
 
@@ -45,8 +50,6 @@
 
     .sidebar__categories {
         @media (min-width: 992px) {
-            margin-top: 20px;
-
             & > li {
                 padding: 2.5px 0;
 

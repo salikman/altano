@@ -6,8 +6,15 @@
 @import './elements/card';
 //---------------------------//
 // Pages
+@import './pages/pages';
 @import './pages/home/home';
+@import './pages/category/category';
+@import './pages/products/products';
 
 //---------------------------//
 // Sections
 @import './sections/sidebar';
+@import './sections/title';
+@import './sections/breadcrumb';
+@import './sections/block-text';
+@import './sections/filter';
