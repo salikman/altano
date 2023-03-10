@@ -1,0 +1,27 @@
+.recommend {
+    margin: 50px 0;
+
+    &__title {
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(3, 1fr);
+
+            .card-small:nth-child(4) {display: none;}
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);
+
+            .card-small:nth-child(3) {display: none;}
+        }
+    }
+}

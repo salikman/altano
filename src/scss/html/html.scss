@@ -10,6 +10,8 @@
 @import './pages/home/home';
 @import './pages/category/category';
 @import './pages/products/products';
+@import './pages/news/news';
+@import './pages/contact/contact';
 
 //---------------------------//
 // Sections
@@ -18,3 +20,5 @@
 @import './sections/breadcrumb';
 @import './sections/block-text';
 @import './sections/filter';
+@import './sections/pagination';
+@import './sections/top-products';
