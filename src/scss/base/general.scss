@@ -108,3 +108,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     box-shadow: none;
     border: none;
 }
+
+.p50 {
+    padding-top: 50px;
+    font-size: 16px;
+    line-height: 150%;
+}

@@ -9,3 +9,10 @@ lazyLoad.lazyLoad();
 swiper.swiper();
 materialize.materialize();
 main.main();
+
+$('.minus, .plus').click(function (e) {
+    e.preventDefault();    
+    var $input = $(this).siblings('.count');
+    var val = parseInt($input.val(), 10);
+    $input.val(val + ($(this).hasClass('minus') ? -1 : 1));
+});

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&_v=20230407225934" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230407225934" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css?_v=20230407225934">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230407225934">
+    <title>Кошик</title>
+</head>
+
+<body class="is-page">
+    <header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-row">
+                <div class="header__collapse"><span></span></div>
+                <div class="header__social">
+                    <span>Ми у соцмережах</span>
+                    <a href="#"><svg><use href="img/icons/icons.svg#fb"></use></svg></a>
+                    <a href="#"><svg><use href="img/icons/icons.svg#insta"></use></svg></a>
+                </div>
+                <div class="header__lang">
+                    <a href="#" class="lang__current dropdown-trigger" data-target="lang_drop"><span>Uk</span></a>
+                    <ul id="lang_drop" class="dropdown-content">
+                        <li><a href="#!">Uk</a></li>
+                        <li><a href="#!">En</a></li>
+                    </ul>
+                </div>
+                <div class="header__basket">
+                    <i class="large material-icons">shopping_cart</i>
+                    <span class="basket__count">12</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-center">
+        <div class="container">
+            <div class="header-row">
+                <a href="#" class="header__logo"><picture><source srcset="img/logo_ALTANO.webp" type="image/webp"><img src="img/logo_ALTANO.jpg" alt="Altano"></picture></a>
+                <div class="header-info">
+                    <div class="header__phone">
+                        <span>Ми на зв'язку з 10:00 до 18:30 без вихідних</span>
+                        <a href="tel:+380675308237">+38 (067) 530 82 37</a>
+                    </div>
+                    <div class="header__location">
+                        <span>Салони: Київ Дніпро</span>
+                        <p>Доставка по всій Україні</p>
+                    </div>
+                    <div class="header__search">
+                        <label for="">
+                            <input type="text" name="" id="" placeholder="Пошук: шезлонг, стіл обідній">
+                            <button type="submit"><i class="large material-icons">search</i></button>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <ul class="header__menu">
+            <li><a href="">Головна</a></li>
+            <li><a href="#">Садові меблі</a></li>
+            <li><a href="#">Парасолі</a></li>
+            <li><a href="#">Короби</a></li>
+            <li><a href="#">HORECA</a></li>
+            <li><a href="#">Обігрівачі</a></li>
+            <li><a href="#">Колекції</a></li>
+            <li><a href="#">SALE</a></li>
+            <li><a href="#">Новини</a></li>
+            <li><a href="">КОНТАКТИ</a></li>
+        </ul>
+    </div>
+</header>
+
+    <main>
+        <div class="cart">
+    <div class="container">
+        <div class="cart-wrapper">
+            <h1 class="cart__title">Кошик</h1>
+            <form action="" class="cart-form">
+                <div class="purchase">
+                    <div class="item">
+                        <a href="#" class="item__img"><picture><source srcset="img/blog1.webp" type="image/webp"><img src="img/blog1.jpg" alt=""></picture></a>
+                        <div class="item__title"><a href="#">Модульний диван для тераси Mauritius NEW white</a></div>
+                        <div class="item__price">160434 грн</div>
+                        <div class="item__amount">
+                            <div class="amount">
+                                <span class="minus">−</span>
+                                <input class="count" type="text" name="" value="1" data-max="100">
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="item__sum">160434 грн</div>
+                        <div class="item__remove"><i class="material-icons">close</i></div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="item__img"><picture><source srcset="img/blog1.webp" type="image/webp"><img src="img/blog1.jpg" alt=""></picture></a>
+                        <div class="item__title"><a href="#">Модульний диван для тераси Mauritius NEW white</a></div>
+                        <div class="item__price">160434 грн</div>
+                        <div class="item__amount">
+                            <div class="amount">
+                                <span class="minus">−</span>
+                                <input class="count" type="text" name="" value="1" data-max="100">
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="item__sum">160434 грн</div>
+                        <div class="item__remove"><i class="material-icons">close</i></div>
+                    </div>
+                </div>
+                <div class="purchase__coupon">
+                    <div class="coupon">
+                        <input type="text" name="" value="" class="coupon__input" placeholder="Код купону">
+                        <input class="coupon__btn" type="button" value="Використати купон">
+                    </div>
+                </div>
+                <div class="purchase__total">
+                    <div class="total__name">
+                        <span>Разом:</span>
+                    </div>
+                    <div class="total__sum">
+                        <span>160434 грн</span>
+                    </div>
+                </div>
+                <div class="deliveries">
+                    <div class="deliveries__title">ВИБЕРІТЬ СПОСІБ ДОСТАВКИ</div>
+                    <div class="item">
+                        <label>
+                            <input class="" id="" type="radio" name="a1" value="1" checked>
+                            <span class="item__title">Кур'єрська доставка Україною</span>
+                            <span class="item__description">
+                                <p>Терміни кур'єрської доставки обговорюються з покупцем індивідуально Кур'єрська
+                                    доставка здійснюється в межах України обраної службою кур'єрської доставки. Доставку
+                                    оплачує покупець.</p>
+                                <p>Вартість безкоштовної доставки розраховується від
+                                    суми замовлення з врахованої знижкою. У разі якщо сума замовлення після застосування
+                                    знижки менше 240 000 долл, здійснюється платна доставка</p>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="item">
+                        <label>
+                            <input id="" type="radio" name="a1" value="2">
+                            <span class="item__title">Самовивезення</span>
+                            <span class="item__description">
+                                <p>Зручний, ьезкоштовний та швидкий спосіб отримання замовлення в салонах Альтано в Києві, Дніпрі</p><p>МЦ «4 ROOM»:
+                                с.Петропавлівська Борщагівка, ул. Петропавлівска, 6, 1 поверх,
+                                салон «ALTANO»</p>
+                                <p>МЦ «Аракс»:
+                                Кільцева дорога 110, 1 поверх,
+                                салон «ALTANO»</p>
+                                <p>ТЦ «Домосфера»:
+                                Столичне шосе, 101, 2 етаж, магазин «ALTANO»</p>
+                                <p>ТЦ «Biennale»:
+                                вул. Космічна, 53a, магазин «ALTANO»</p>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filling-form">
+                    <div class="row">
+                        <div class="filling-form__input">
+                            <input name="name" type="text" value="" placeholder="Введіть ім'я*">
+                        </div>
+                        <div class="filling-form__input">
+                            <input name="phone" type="text" value="" placeholder="Введіть телефон">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="filling-form__input">
+                            <input name="email" type="text" value="" placeholder="Введіть e-mail*">
+                        </div>
+                        <div class="filling-form__input">
+                            <input name="address" type="text" value="" placeholder="Введіть адресу">
+                        </div>
+                    </div>
+                    <div class="filling-form__textarea">
+                        <div class="filling-form__input">
+                            <textarea rows="4" name="comment" placeholder="Введіть повідомлення"></textarea>
+                        </div>
+                    </div>
+                    <input class="filling-form__btn" type="submit" name="" value="Оформити замовлення">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+        <div class="container">
+    <div class="block-text p50">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi aperiam fuga similique cum porro modi tempore quos officia reiciendis adipisci. Perspiciatis, dolor ea? Deserunt impedit vel distinctio veniam nostrum cupiditate.
+        Rerum et doloremque suscipit magni unde totam enim quae adipisci qui neque exercitationem libero harum, aliquam corrupti numquam eveniet excepturi vel dolore porro ipsa. At rem voluptatem adipisci commodi dolores?
+        Eos mollitia ex ut illo perferendis nisi numquam, quod repellendus illum nobis non? Facilis beatae nulla, sit expedita voluptatum voluptas reiciendis atque est tenetur ea inventore magnam ex rem et?
+    </div>
+</div>
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <a href="#" class="footer__logo"><picture><source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.jpg" alt=""></picture></a>
+            <div class="footer__menu">
+                <a href="">Головна</a>
+                <a href="#">Садові меблі</a>
+                <a href="#">Парасолі</a>
+                <a href="#">Короби</a>
+                <a href="#">HORECA</a>
+                <a href="#">Обігрівачі</a>
+                <a href="#">Колекції</a>
+                <a href="#">SALE</a>
+                <a href="#">Новини</a>
+                <a href="#">КОНТАКТИ</a>
+                <a href="#">Про компанію</a>
+                <a href="#">Дилерам</a>
+            </div>
+            <div class="footer__social">
+                <span>Ми у соцмережах</span>
+                <a href="#"><svg><use href="img/icons/icons.svg#fb"></use></svg></a>
+                <a href="#"><svg><use href="img/icons/icons.svg#insta"></use></svg></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js?_v=20230407225934" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230407225934"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js?_v=20230407225934"></script>
+<script src="js/app.min.js?_v=20230407225934"></script>
+</body>
+</html>
